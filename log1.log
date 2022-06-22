@@ -1,0 +1,150 @@
+Classname = RestSteps001
+Classname = Simplilearn.Steps.RestSteps001
+LOGGER >>> Step 1 : base URl http://reqres.in
+LOGGER DEBUG >>> Debugging message...
+LOGGER DEBUG >>> Debugging message...
+LOGGER DEBUG >>> Debugging message...
+LOGGER DEBUG >>> Debugging message...
+LOGGER DEBUG >>> Debugging WARN message...
+LOGGER DEBUG >>> Debugging ERROR message...
+LOGGER DEBUG >>> Debugging FATAL message...
+LOGGER >>>>>> Step 2 : path /api/users?page=2
+LOGGER >>>>>> Step 3 : request
+Get connection for route {}->http://reqres.in:80
+Connecting to reqres.in:80
+CookieSpec selected: ignoreCookies
+Auth cache not set in the context
+Target auth state: UNCHALLENGED
+Proxy auth state: UNCHALLENGED
+Attempt 1 to execute request
+Sending request: GET /api/users?page=2 HTTP/1.1
+ >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+ >> "Accept: */*[\r][\n]"
+ >> "Host: reqres.in[\r][\n]"
+ >> "Connection: Keep-Alive[\r][\n]"
+ >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)[\r][\n]"
+ >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ >> "[\r][\n]"
+>> GET /api/users?page=2 HTTP/1.1
+>> Accept: */*
+>> Host: reqres.in
+>> Connection: Keep-Alive
+>> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+>> Accept-Encoding: gzip,deflate
+ << "HTTP/1.1 301 Moved Permanently[\r][\n]"
+ << "Date: Sat, 09 Apr 2022 11:55:19 GMT[\r][\n]"
+ << "Transfer-Encoding: chunked[\r][\n]"
+ << "Connection: keep-alive[\r][\n]"
+ << "Cache-Control: max-age=3600[\r][\n]"
+ << "Expires: Sat, 09 Apr 2022 12:55:19 GMT[\r][\n]"
+ << "Location: https://reqres.in/api/users?page=2[\r][\n]"
+ << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OQjDrUI9A0nfdow9T7Qc%2BgybyKJ%2Fl254ngvNXGc2IjjbDXTllJDwY1jmIx8hhjGeJGIHou3llv5GquYCPZvnSe5fzKVAkGut1xGNZ%2FitqR%2F3B%2FiwDPVLma7t6BU%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+ << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+ << "Vary: Accept-Encoding[\r][\n]"
+ << "Server: cloudflare[\r][\n]"
+ << "CF-RAY: 6f930d975bf391ba-SIN[\r][\n]"
+ << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+ << "[\r][\n]"
+Receiving response: HTTP/1.1 301 Moved Permanently
+<< HTTP/1.1 301 Moved Permanently
+<< Date: Sat, 09 Apr 2022 11:55:19 GMT
+<< Transfer-Encoding: chunked
+<< Connection: keep-alive
+<< Cache-Control: max-age=3600
+<< Expires: Sat, 09 Apr 2022 12:55:19 GMT
+<< Location: https://reqres.in/api/users?page=2
+<< Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OQjDrUI9A0nfdow9T7Qc%2BgybyKJ%2Fl254ngvNXGc2IjjbDXTllJDwY1jmIx8hhjGeJGIHou3llv5GquYCPZvnSe5fzKVAkGut1xGNZ%2FitqR%2F3B%2FiwDPVLma7t6BU%3D"}],"group":"cf-nel","max_age":604800}
+<< NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+<< Vary: Accept-Encoding
+<< Server: cloudflare
+<< CF-RAY: 6f930d975bf391ba-SIN
+<< alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Connection can be kept alive indefinitely
+Redirect requested to location 'https://reqres.in/api/users?page=2'
+Resetting target auth state
+Redirecting to 'https://reqres.in/api/users?page=2' via {s}->https://reqres.in:443
+ << "0[\r][\n]"
+ << "[\r][\n]"
+Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4d192aef
+Connection can be kept alive indefinitely
+Get connection for route {s}->https://reqres.in:443
+Connection 0.0.0.0:53861<->172.67.222.36:80 closed
+Connecting to reqres.in:443
+CookieSpec selected: ignoreCookies
+Auth cache not set in the context
+Target auth state: UNCHALLENGED
+Proxy auth state: UNCHALLENGED
+Attempt 2 to execute request
+Sending request: GET /api/users?page=2 HTTP/1.1
+ >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+ >> "Accept: */*[\r][\n]"
+ >> "Host: reqres.in[\r][\n]"
+ >> "Connection: Keep-Alive[\r][\n]"
+ >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)[\r][\n]"
+ >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ >> "[\r][\n]"
+>> GET /api/users?page=2 HTTP/1.1
+>> Accept: */*
+>> Host: reqres.in
+>> Connection: Keep-Alive
+>> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+>> Accept-Encoding: gzip,deflate
+ << "HTTP/1.1 200 OK[\r][\n]"
+ << "Date: Sat, 09 Apr 2022 11:55:20 GMT[\r][\n]"
+ << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ << "Transfer-Encoding: chunked[\r][\n]"
+ << "Connection: keep-alive[\r][\n]"
+ << "X-Powered-By: Express[\r][\n]"
+ << "Access-Control-Allow-Origin: *[\r][\n]"
+ << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+ << "Via: 1.1 vegur[\r][\n]"
+ << "Cache-Control: max-age=14400[\r][\n]"
+ << "CF-Cache-Status: HIT[\r][\n]"
+ << "Age: 6010[\r][\n]"
+ << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+ << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=clz7Rzba7DAhQY1beQHPDjoy%2F4SmrSdSpKBkha%2FdW6UmRDHvY4dGwyeE9EGz0VyTv7Ai6hmp1pvpocfKHbM374T%2FwQMEGGv15Q4Pv14XKAKYtcoiKRw0Val2GSg%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+ << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+ << "Vary: Accept-Encoding[\r][\n]"
+ << "Server: cloudflare[\r][\n]"
+ << "CF-RAY: 6f930d9abe144a59-SIN[\r][\n]"
+ << "Content-Encoding: gzip[\r][\n]"
+ << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+ << "[\r][\n]"
+Receiving response: HTTP/1.1 200 OK
+<< HTTP/1.1 200 OK
+<< Date: Sat, 09 Apr 2022 11:55:20 GMT
+<< Content-Type: application/json; charset=utf-8
+<< Transfer-Encoding: chunked
+<< Connection: keep-alive
+<< X-Powered-By: Express
+<< Access-Control-Allow-Origin: *
+<< Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+<< Via: 1.1 vegur
+<< Cache-Control: max-age=14400
+<< CF-Cache-Status: HIT
+<< Age: 6010
+<< Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+<< Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=clz7Rzba7DAhQY1beQHPDjoy%2F4SmrSdSpKBkha%2FdW6UmRDHvY4dGwyeE9EGz0VyTv7Ai6hmp1pvpocfKHbM374T%2FwQMEGGv15Q4Pv14XKAKYtcoiKRw0Val2GSg%3D"}],"group":"cf-nel","max_age":604800}
+<< NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+<< Vary: Accept-Encoding
+<< Server: cloudflare
+<< CF-RAY: 6f930d9abe144a59-SIN
+<< Content-Encoding: gzip
+<< alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Connection can be kept alive indefinitely
+Parsing response as: application/json; charset=utf-8
+ << "17b[\r][\n]"
+ << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+ << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+ << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+ << "[\r][\n]"
+ << "0[\r][\n]"
+ << "[\r][\n]"
+Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+LOGGER >>>>>> Step 4 : response
+Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@648d0e6d
+Connection can be kept alive indefinitely
+LOGGER >>>>>> Step 6 : equalTo
+LOGGER >>>>>> Step 6 : equalTo
+LOGGER >>>>>> Step 6 : hasItem
+LOGGER >>>>>> Step 6 : hasKey
